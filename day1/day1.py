@@ -1,8 +1,4 @@
-numbers_list = []
-with open('input.txt') as f:
-    lines = [int(line.rstrip()) for line in f]
-    numbers_list = lines
-print(numbers_list)
+numbers_list = [int(line.rstrip()) for line in open('input.txt')]
 
 for i in range(0, len(numbers_list)):
     for j in range(i, len(numbers_list)):
