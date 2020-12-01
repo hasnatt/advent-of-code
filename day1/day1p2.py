@@ -22,4 +22,4 @@ for i in range(0, len(numbers_list)):
 
 
                 print(f' i + j + k = {sum_ijk}')
-                print(f' i * j = {numbers_list[i]*numbers_list[j]*numbers_list[k]}')
+                print(f' i * j * k = {numbers_list[i]*numbers_list[j]*numbers_list[k]}')
