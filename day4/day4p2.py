@@ -7,7 +7,7 @@ pid = re.compile(r'^[0-9]{9}$')
 hgt = re.compile(r'^([0-9]{2,3})(cm|in)$')
 
 
-def read_lines():
+def lines():
     return open("input.txt").read().split("\n\n")
 
 def part1(lines):
@@ -20,10 +20,10 @@ def part1(lines):
         if passports.keys() >= KEYS:
             count+=1
             part2_list.append(passports)
-    return(count, part2_list) 
+    return(count,part2_list) 
 
 def part2():
-    passports = part1()[1]
+    passports = part1(lines())[1]
     c = 0
     for passport in passports:
         has_height = hgt.match(passport['hgt'])
@@ -77,10 +77,10 @@ def part2():
 
 
 
-# print(part2())
+print(part2())
 
 
-print(part1(read_lines()[0]))
+# print(part1(lines()))
     
 
   
